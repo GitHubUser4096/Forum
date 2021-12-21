@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>TestForum1</title>
+    <script src="lib/js/XHR.js" charset="utf-8"></script>
+    <script src="lib/js/forum/components/ContentView.js" charset="utf-8"></script>
+    <script src="lib/js/forum/components/ContentEditor.js" charset="utf-8"></script>
+    <script src="lib/js/forum/components/RatingBar.js" charset="utf-8"></script>
+    <script src="lib/js/Application.js" charset="utf-8"></script>
+    <script src="js/PostView.js" charset="utf-8"></script>
+    <script src="js/ForumRatingBar.js" charset="utf-8"></script>
+    <script src="js/CommentEditor.js" charset="utf-8"></script>
+    <script src="js/TitleBar.js" charset="utf-8"></script>
+    <script src="js/pages/MainPage.js" charset="utf-8"></script>
+    <script src="js/pages/LoginPage.js" charset="utf-8"></script>
+    <script src="js/pages/NewAccountPage.js" charset="utf-8"></script>
+    <script src="js/pages/PanelPage.js" charset="utf-8"></script>
+    <script src="js/pages/PostPage.js" charset="utf-8"></script>
+    <script src="js/pages/ViewPostPage.js" charset="utf-8"></script>
+    <script type="text/javascript">
+
+      function main(){
+
+        Application.pages['main'] = new MainPage();
+        Application.pages['login'] = new LoginPage();
+        Application.pages['newAccount'] = new NewAccountPage();
+        Application.pages['panel'] = new PanelPage();
+        Application.pages['post'] = new PostPage();
+        Application.pages['viewPost'] = new ViewPostPage();
+
+        Application.load();
+
+      }
+
+    </script>
+  </head>
+  <body onload="main();">
+
+  </body>
+</html>
